@@ -1,124 +1,86 @@
-Introduction
-============
+# Online MD - Health Care System for DJCSI CodeShastra 4.0 (2018)
 
-![Bower version](https://img.shields.io/bower/v/adminlte.svg)
-[![npm version](https://img.shields.io/npm/v/admin-lte.svg)](https://www.npmjs.com/package/admin-lte)
-[![Packagist](https://img.shields.io/packagist/v/almasaeed2010/adminlte.svg)](https://packagist.org/packages/almasaeed2010/adminlte)
-[![CDNJS](https://img.shields.io/cdnjs/v/admin-lte.svg)](https://cdnjs.com/libraries/admin-lte)
+In a world of scarcity, saving lives is thin on the ground. Medical resource deficiency is a severe issue in India. Hundreds of patients lose their lives due to lack of access to apt information and amenities. Circumstances as such greatly emphasise the need for a centralised information reserve of medications, equipment, personal records and medical professionals available that is accessible and intelligible to anyone, at anytime and from anywhere. In such scenario our Online MD System helps the needy to get all the relevant and necessary information at one place which is an impactful solution to the critical problem mentioned above.
+The application renders the databases available at all times, from all places and to each and everyone who is in need of this information. In other words, the System focuses on centralizing or bringing together all the information related to medical which is spread across the entire web at one place for the patients, doctors, pharmacists and every other individual in the field of medicine.
+Following are the features which are incorporated in our System:
+* Registering Chemists on our System with their geolocation and google spreadsheet link of their inventory, then using google spreadsheet API we will centralize all the decentralized spreadsheets to our E-commerce system and providing medicines to the patients and doctors at a reasonable rate and at the nearest location. 
+* Map View of all the nearby hospitals, chemists, doctors with their live status of currently being open or close thus helping people to get to the right place in the urgent hour of need. 
+* Live Streaming feature with doctors from the urban area to help our people as well as doctors from rural and remote areas. 
+* SMS chat in English as well as local language for the villager to get details about nearby services and medical product availability using the data available in our system as well as a third-party source. 
+* Giving other alternatives to a medicine using its generic name in the market as well as it nearby availability mentioned above. 
+* Forum & chat with doctor registered on our system.
 
-**AdminLTE** -- is a fully responsive admin template. Based on **[Bootstrap 3](https://github.com/twbs/bootstrap)** framework. Highly customizable and easy to use. Fits many screen resolutions from small mobile devices to large desktops. Check out the live preview now and see for yourself.
+## Getting Started
 
-**Download & Preview on [Almsaeed Studio](https://almsaeedstudio.com)**
+* Once the Project is cloned, the project must be placed in the htdocs/www folder of your PHP Localhost (XAMPP or WAMP)
+* The Required Database found in the assets folder must be imported into PHPmyAdmin databases of your localhost for running the project.
+* The Project uses [Google Maps](https://developers.google.com/maps/documentation/javascript/), [Places](https://developers.google.com/places/) and [Sheet](https://developers.google.com/sheets/api/) API so you need to setup account on google cloud platform and get the required credential for the used APIs.
+* Account on TextIt.in to use the TextIt Flow API for SMS chat.
+### Setting up Live Stream.
 
-Looking for Premium Templates?
-------------------------------
-**Almsaeed studio just opened a new premium templates page. Hand picked to insure the best quality and the most affordable prices. Visit https://almsaeedstudio.com/premium for more information.**
+* Create your account on EZ Web Player and Download Adobe Flash Media Live Encoder.
+* Once you create a account on EZ Web Player you will get a RTMP Live Stream URL.
+* Use that link in Adobe Flash Media Live Encoder as FMS URL and then connect and start recording the live stream video.
+* Go to EZ Web Player Dash Board and Add a Video using RTMP Live Stream Option.
+* Now your Live Stream is generated.
+
+Link: [https://www.youtube.com/watch?v=gqiR5ibbYfI](https://www.youtube.com/watch?v=gqiR5ibbYfI)
+
+### Prerequisites
+
+* [Xampp PHP 5.6 or Above](https://www.apachefriends.org/download.html)
+* [Adobe Flash Media Live Encoder](https://www.adobe.com/go/fmle)
+* [EZ Web Player](http://www.ezwebplayer.com/)
+
+## Demo
+### Medical E-Store populated using Google SpreadSheet of Registered Chemist's Inventory
+<img src="SS/1.png">
+
+### Medical Forum
+<img src="SS/2.png">
+
+### Chat with Doctors
+<img src="SS/3.png">
+
+### Medicine Search using Generic medicine names suggesting different alternate manufacturer.
+<img src="SS/4.png">
+
+### Doctor Search with Ratings and current status
+<img src="SS/5.png">
+
+### Chemist Search with Ratings and current status
+<img src="SS/6.png">
+
+### Hospital Search
+<img src="SS/7.png">
+
+### SMS Based Medical Help
+1                          |2                          |3                          |
+:-------------------------:|:-------------------------:|:-------------------------:|
+<img src="SS/TextIt/1.png" alt="Drawing" width="250" height="400"/>  |  <img src="SS/TextIt/2.png" alt="Drawing" width="250" height="400"/>  |  <img src="SS/TextIt/3.png" alt="Drawing" width="250" height="400"/> |
+
+4                          |5                          |6                          |
+:-------------------------:|:-------------------------:|:-------------------------:|
+<img src="SS/TextIt/4.png" alt="Drawing" width="250" height="400"/>  |  <img src="SS/TextIt/5.png" alt="Drawing" width="250" height="400"/>  |  <img src="SS/TextIt/6.png" alt="Drawing" width="250" height="400"/>  |
+
+## Built With
+
+* [EZ Web Player](http://www.ezwebplayer.com/)
+* Admin LTE 2 Bootstrap Template
+* Google [Map](https://developers.google.com/maps/documentation/javascript/) & [Places API](https://developers.google.com/sheets/api/) 
+* Google [Sheet API](https://developers.google.com/sheets/api/)
 
 
-!["AdminLTE Presentation"] (https://almsaeedstudio.com/AdminLTE2.png "AdminLTE Presentation")
+## Authors
 
-**AdminLTE** has been carefully coded with clear comments in all of its JS, LESS and HTML files. LESS has been used to increase code customizability.
+* **Prathamesh Mhapsekar** - [prathmesh36](https://github.com/prathmesh36)
+* **Mandar Mhapsekar** - [mandar10](https://github.com/mandar10)
+* **Raj Patel** 
+* **Akshay Jain**
 
-Installation
-------------
-There are multiple ways to install AdminLTE.
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-####Download:
+## License
 
-Download from Github or [visit Almsaeed Studio](https://almsaeedstudio.com) and download the latest release.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-####Using The Command Line:
-
-**Github**
-
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine
-```
-git clone https://github.com/YOUR_USERNAME/AdminLTE.git
-```
-
-**Bower**
-
-```
-bower install admin-lte
-```
-
-**npm**
-
-```
-npm install --save admin-lte
-```
-
-**Composer**
-
-```
-composer require "almasaeed2010/adminlte=~2.0"
-```
-
-Documentation
--------------
-Visit the [online documentation](https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html) for the most
-updated guide. Information will be added on a weekly basis.
-
-Browser Support
----------------
-- IE 9+
-- Firefox (latest)
-- Chrome (latest)
-- Safari (latest)
-- Opera (latest)
-
-Contribution
-------------
-Contribution are always **welcome and recommended**! Here is how:
-
-- Fork the repository ([here is the guide](https://help.github.com/articles/fork-a-repo/)).
-- Clone to your machine ```git clone https://github.com/YOUR_USERNAME/AdminLTE.git```
-- Make your changes
-- Create a pull request
-
-#### Contribution Requirements:
-
-- When you contribute, you agree to give a non-exclusive license to Almsaeed Studio to use that contribution in any context as we (Almsaeed Studio) see appropriate.
-- If you use content provided by another party, it must be appropriately licensed using an [open source](http://opensource.org/licenses) license.
-- Contributions are only accepted through Github pull requests.
-- Finally, contributed code must work in all supported browsers (see above for browser support).
-
-License
--------
-AdminLTE is an open source project by [Almsaeed Studio](https://almsaeedstudio.com) that is licensed under [MIT](http://opensource.org/licenses/MIT). Almsaeed Studio
-reserves the right to change the license of future releases.
-
-Todo List
----------
-- ~~Light sidebar colors~~ (Done v2.1.0)
-- ~~Right sidebar~~ (Done v2.1.0)
-- ~~Minified main-sidebar~~ (Done v2.1.0)
-- Right to left support
-- ~~Custom pace style~~ (Done v2.3.1)
-
-Legacy Releases
-----------------
-AdminLTE 1.x can be easily upgraded to 2.x using [this guide](https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#upgrade), but if you intend to keep using AdminLTE 1.x, you can download the latest release from the [releases](https://github.com/almasaeed2010/AdminLTE/releases) section above.
-
-Change log
-----------
-**For the most recent change log, visit the [releases page](https://github.com/almasaeed2010/AdminLTE/releases) or the [changelog file](https://github.com/almasaeed2010/AdminLTE/blob/master/changelog.md).** We will add a detailed release notes to each new release. 
-
-Image Credits
--------------
-[Pixeden](http://www.pixeden.com/psd-web-elements/flat-responsive-showcase-psd)
-
-[Graphicsfuel](http://www.graphicsfuel.com/2013/02/13-high-resolution-blur-backgrounds/)
-
-[Pickaface](http://pickaface.net/)
-
-[Unsplash](https://unsplash.com/)
-
-[Uifaces](http://uifaces.com/)
-
-Donations
----------
-Donations are **greatly appreciated!**
-
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif "AdminLTE Presentation")](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=629XCUSXBHCBC "Donate")
